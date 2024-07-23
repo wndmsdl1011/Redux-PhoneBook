@@ -13,17 +13,19 @@ import ContactList from './component/ContactList';
 function App() {
   return (
     <div>
-      <h1 className='title'>연락처</h1>
-      <Container>
-        <Row>
-          <Col>
-          <ContactForm/>
-          </Col>
-          <Col>
-          <ContactList/>
-          </Col>
-        </Row>
-      </Container>
+      <div className='container'>
+        <h1 className='title'>연락처</h1>
+        <Container>
+          <Row>
+            <Col>
+              <ContactForm />
+            </Col>
+            <Col>
+              <ContactList />
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }
