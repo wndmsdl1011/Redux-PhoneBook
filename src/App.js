@@ -12,20 +12,18 @@ import ContactList from './component/ContactList';
 
 function App() {
   return (
-    <div>
-      <div className='container'>
-        <h1 className='title'>연락처</h1>
-        <Container>
-          <Row>
-            <Col>
-              <ContactForm />
-            </Col>
-            <Col>
-              <ContactList />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+    <div className='body'>
+      <h1 className='title'>Phone Book</h1>
+      <Container>
+        <Row>
+          <Col>
+          <ContactForm/>
+          </Col>
+          <Col>
+          <ContactList/>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

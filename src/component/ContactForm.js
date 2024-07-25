@@ -14,7 +14,7 @@ const ContactForm = () => {
         dispatch({type:"ADD_CONTACT", payload:{name, phoneNumber}})
     }
     return (
-        <div>
+        <div className='contact-form'>
             <Form onSubmit={addContact}>
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>이름</Form.Label>
@@ -22,8 +22,8 @@ const ContactForm = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formContact">
-                    <Form.Label>연락처</Form.Label>
-                    <Form.Control type="number" placeholder="연락처를 입력해주세요" onChange={(event) => setPhoneNumber(event.target.value)} />
+                    <Form.Label>전화번호</Form.Label>
+                    <Form.Control type="number" placeholder="전화번호를 입력해주세요" onChange={(event) => setPhoneNumber(event.target.value)} />
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
